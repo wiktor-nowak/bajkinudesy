@@ -15,6 +15,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Create .env file from secret 💡
+        run: echo "${{ secrets.ENV_FILE_CONTENT }}" > .env
+        shell: bash
+
       - name: Log in to GitHub Container Registry
         uses: docker/login-action@v3
         with:
@@ -43,6 +47,8 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd /home/deployer/apps
+            cp ./envs/bajkinudesy.env ./bajkinudesy.env
             docker compose pull
+            rm bajkinudesy.env
             docker compose up -d --remove-orphans
             docker image prune -af
