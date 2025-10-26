@@ -48,7 +48,8 @@ jobs:
           script: |
             cd /home/deployer/apps
             cp ./envs/bajkinudesy.env ./bajkinudesy.env
+            docker compose down
             docker compose pull
-            rm bajkinudesy.env
             docker compose up -d --remove-orphans
+            rm bajkinudesy.env
             docker image prune -af
