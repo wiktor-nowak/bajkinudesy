@@ -4,13 +4,8 @@ FROM base AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 
-# Copy package files
 COPY package.json package-lock.json* ./
-
-# Install dependencies
 RUN npm ci
-
-# Copy all other files
 COPY . .
 
 # Stage 2: Builder
@@ -28,7 +23,6 @@ FROM base AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs
 

@@ -47,8 +47,6 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
             cd /home/deployer/apps
-            cp ./envs/bajkinudesy.env ./bajkinudesy.env
             docker compose pull
-            rm bajkinudesy.env
             docker compose up -d --remove-orphans
             docker image prune -af
