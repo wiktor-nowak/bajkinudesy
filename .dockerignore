@@ -1,0 +1,14 @@
+# Ignore system and git files
+.git
+.gitignore
+Dockerfile
+*.md
+
+# Ignore local dev files
+node_modules
+npm-debug.log
+.env.local
+.env.development
+
+# But keep source code and lockfiles
+!.env.production

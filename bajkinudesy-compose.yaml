@@ -1,6 +1,0 @@
-services:
-  next-app:
-    container_name: bajkinudesy.pl
-    image: ghcr.io/wiktor-nowak/bajkinudesy.pl:latest
-    ports:
-      - 3000:3000 # outside container : inside container

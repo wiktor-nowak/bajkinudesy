@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { Image } from "@imagekit/next";
 import Link from "next/link";
@@ -8,6 +10,8 @@ import { IoIosArrowDown } from "react-icons/io";
 const REGISTRATION_LINK = "https://forms.gle/TNDXJtbHiTHvGrs17";
 
 function Banner() {
+  const text = process.env.NEXT_PUBLIC_ENV_TEXT;
+
   return (
     <div className="w-full relative overflow-hidden min-h-[100vh]">
       <div className="fixed top-0 left-0 w-full h-[150vh] md:h-[180vh] flex-1 min-h-0 -z-10">
@@ -40,6 +44,7 @@ function Banner() {
           Jednodniowe spotkanie fotograficzne w&nbsp;Bielsku-Białej. Jesienna
           edycja już 4&nbsp;października!
         </p>
+        <p>{text ?? "No text!"}</p>
         <Link
           href={REGISTRATION_LINK}
           target="_blank"
