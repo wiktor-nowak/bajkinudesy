@@ -42,7 +42,7 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASSPHRASE }}
           script: |
-            cd /home/deployer/app
+            cd /home/deployer/apps
             docker compose pull
             docker compose up -d --remove-orphans
             docker image prune -af

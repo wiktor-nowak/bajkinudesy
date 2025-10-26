@@ -19,8 +19,9 @@ FROM base AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
+COPY /home/deployer/envs/bajkinudesy.env .env
 RUN npm run build
-
+RUN rm .env
 
 # Stage 3: Runner
 FROM base AS runner
