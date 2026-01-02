@@ -2,7 +2,7 @@ import { Image } from "@imagekit/next";
 import Link from "next/link";
 import React from "react";
 
-const HUB_LINK = "https://www.thehubvision.pl/";
+const HUB_LINK = "https://www.instagram.com/aha_studio_bielsko/";
 const FILMBEAST_LINK = "https://filmbeast.pl/";
 
 function Sponsors() {

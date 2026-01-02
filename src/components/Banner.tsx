@@ -18,7 +18,14 @@ function Banner() {
           src="/B&N_zapowiedz/zimowa_background.jpg"
           alt="Banner, ludki świąteczne."
           fill
-          className="object-cover"
+          className="object-cover max-md:hidden"
+        />
+        <Image
+          urlEndpoint="https://ik.imagekit.io/wn3496"
+          src="/B&N_zapowiedz/zimowa_background_mobile.jpg"
+          alt="Banner, ludki świąteczne."
+          fill
+          className="object-cover md:hidden"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-fade-light to-raisin-black [--tw-gradient-stops:fade-light_90%,raisin-black_100%]" />
       </div>
