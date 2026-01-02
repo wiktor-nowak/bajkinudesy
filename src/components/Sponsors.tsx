@@ -16,8 +16,8 @@ function Sponsors() {
           <div className="relative flex-1">
             <Image
               urlEndpoint="https://ik.imagekit.io/wn3496"
-              src="/logos/hub-logo.webp"
-              alt="Logo miejscówki, TheHub"
+              src="/logos/aha-studio.jpg"
+              alt="Logo miejscówki, Aha-Studio"
               height={75}
               width={75}
               className="object-cover transition-transform duration-500 hover:scale-115"

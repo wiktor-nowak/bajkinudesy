@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { subtitleFont } from "../lib/fonts";
 
 const INSTA_LINK = "https://www.instagram.com/bajkinudesy/";
+const MADE_BY_LINK = "https://www.wiktor-nowak.pl/";
 
 function Footer() {
   return (
@@ -30,7 +31,9 @@ function Footer() {
           className={`${subtitleFont.className} text-sm flex h-[40px] flex-wrap items-center justify-center`}
         >
           Projekt i wykonanie:&nbsp;
-          <strong className={` text-columbia-blue`}>Wiktor Nowak</strong>
+          <Link href={MADE_BY_LINK} className={`text-columbia-blue`}>
+            Wiktor Nowak
+          </Link>
         </p>
       </footer>
     </div>

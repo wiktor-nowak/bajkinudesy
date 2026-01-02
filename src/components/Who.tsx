@@ -14,7 +14,7 @@ function Who() {
       <div className="relative md:min-w-[450px] flex-1 overflow-hidden flex justify-center items-center">
         <Image
           urlEndpoint="https://ik.imagekit.io/wn3496"
-          src="/B&N_zapowiedz/babetta.jpg"
+          src="/B&N_zapowiedz/babetta_zimowa.jpg"
           alt="Organizatorka eventu."
           height={1352}
           width={900}

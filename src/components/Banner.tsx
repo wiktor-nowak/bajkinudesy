@@ -7,18 +7,16 @@ import { Button } from "@headlessui/react";
 import { artFont, subtitleFont } from "../lib/fonts";
 import { IoIosArrowDown } from "react-icons/io";
 
-const REGISTRATION_LINK = "https://forms.gle/TNDXJtbHiTHvGrs17";
+const REGISTRATION_LINK = "https://forms.gle/EP1egUrwstnBRybq5";
 
 function Banner() {
-  const text = process.env.NEXT_PUBLIC_ENV_TEXT;
-
   return (
     <div className="w-full relative overflow-hidden min-h-[100vh]">
       <div className="fixed top-0 left-0 w-full h-[150vh] md:h-[180vh] flex-1 min-h-0 -z-10">
         <Image
           urlEndpoint="https://ik.imagekit.io/wn3496"
-          src="/B&N_zapowiedz/together.jpg"
-          alt="Banner, dłonie na aparatach."
+          src="/B&N_zapowiedz/zimowa_background.jpg"
+          alt="Banner, ludki świąteczne."
           fill
           className="object-cover"
         />
@@ -41,10 +39,9 @@ function Banner() {
         <p
           className={`text-columbia-blue text-xl my-8 mx-20 text-center ${subtitleFont.className}`}
         >
-          Jednodniowe spotkanie fotograficzne w&nbsp;Bielsku-Białej. Jesienna
-          edycja już 4&nbsp;października!
+          Jednodniowe spotkanie fotograficzne w&nbsp;Bielsku-Białej. Zimowa
+          edycja już 31&nbsp;stycznia!
         </p>
-        <p>{text ?? "No text!"}</p>
         <Link
           href={REGISTRATION_LINK}
           target="_blank"
