@@ -19,11 +19,14 @@ function Footer() {
           </p>
           <Link
             href={INSTA_LINK}
-            className={`${subtitleFont.className} text-lg sm:text-xl ledaing-10`}
+            className={`${subtitleFont.className} text-lg sm:text-xl ledaing-10 hover:text-lime-300 hover:scale-102`}
           >
             @bajkinudesy
           </Link>
-          <Link href={INSTA_LINK}>
+          <Link
+            href={INSTA_LINK}
+            className="hover:text-lime-300 hover:scale-102"
+          >
             <FaInstagram size={32} />
           </Link>
         </div>
@@ -31,7 +34,10 @@ function Footer() {
           className={`${subtitleFont.className} text-sm flex h-[40px] flex-wrap items-center justify-center`}
         >
           Projekt i wykonanie:&nbsp;
-          <Link href={MADE_BY_LINK} className={`text-columbia-blue`}>
+          <Link
+            href={MADE_BY_LINK}
+            className={`hover:text-lime-300 hover:scale-102`}
+          >
             Wiktor Nowak
           </Link>
         </p>

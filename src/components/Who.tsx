@@ -2,10 +2,10 @@ import { Image } from "@imagekit/next";
 import Link from "next/link";
 import React from "react";
 import { FaInstagram } from "react-icons/fa";
-import { FiAtSign } from "react-icons/fi";
+// import { FiAtSign } from "react-icons/fi";
 
 const KARO_INSTA = "https://www.instagram.com/karomro/";
-const KARO_MAXMODELS = "https://www.maxmodels.pl/modelka-kmrowiec.html";
+// const KARO_MAXMODELS = "https://www.maxmodels.pl/modelka-kmrowiec.html";
 
 function Who() {
   return (
@@ -14,7 +14,7 @@ function Who() {
       <div className="relative md:min-w-[450px] flex-1 overflow-hidden flex justify-center items-center">
         <Image
           urlEndpoint="https://ik.imagekit.io/wn3496"
-          src="/B&N_zapowiedz/babetta_zimowa.jpg"
+          src="/B&N_zapowiedz/karo-foto-narrow.jpg"
           alt="Organizatorka eventu."
           height={1352}
           width={900}
@@ -23,9 +23,7 @@ function Who() {
         {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-fade-dark [--tw-gradient-stops:transparent_90%,fade-dark_100%]" /> */}
       </div>
       <div>
-        <h4 className="text-4xl text-columbia-blue">
-          Dlaczego warto mi zaufać?
-        </h4>
+        <h4 className="text-4xl text-lime-100">Dlaczego warto mi zaufać?</h4>
         <article className="mt-4 md:mt-8 flex flex-col gap-4 md:gap-4">
           <p>
             Od ponad 13 lat działam w fotomodelingu, realizując projekty zarówno
@@ -55,19 +53,19 @@ function Who() {
             Krakowskimi Szkołami Artystycznymi, House Of Make Up Academy w 
             Krakowie.
           </p>
-          <div>Zobacz moje portfolio i&nbsp;Instagram:</div>
+          <div>Zobacz moje portfolio:</div>
         </article>
-        <ul className="mt-4 md:mt-8 flex justify-center items-center gap-8 md:gap-4 bg-gunmetal rounded-md p-4">
-          <Link href={KARO_MAXMODELS}>
+        <ul className="mt-4 md:mt-8 flex justify-center items-center gap-8 md:gap-4 bg-slate-300/20 rounded-md p-4">
+          {/* <Link href={KARO_MAXMODELS}>
             <FiAtSign
               size={40}
               className="hover:text-columbia-blue transition-transform duration-500 hover:scale-115"
             />
-          </Link>
+          </Link> */}
           <Link href={KARO_INSTA}>
             <FaInstagram
               size={40}
-              className="hover:text-columbia-blue transition-transform duration-500 hover:scale-115"
+              className="hover:text-lime-300 transition-transform duration-500 hover:scale-115"
             />
           </Link>
         </ul>

@@ -7,7 +7,7 @@ import { Button } from "@headlessui/react";
 import { artFont, subtitleFont } from "../lib/fonts";
 import { IoIosArrowDown } from "react-icons/io";
 
-const REGISTRATION_LINK = "https://forms.gle/EP1egUrwstnBRybq5";
+const REGISTRATION_LINK = "forms.gle/saf9hSgMHkWukVEL8";
 
 function Banner() {
   return (
@@ -15,15 +15,15 @@ function Banner() {
       <div className="fixed top-0 left-0 w-full h-[150vh] md:h-[180vh] flex-1 min-h-0 -z-10">
         <Image
           urlEndpoint="https://ik.imagekit.io/wn3496"
-          src="/B&N_zapowiedz/zimowa_background.jpg"
-          alt="Banner, ludki świąteczne."
+          src="/B&N_zapowiedz/tlo_karo_jungle.jpg"
+          alt="Banner, Karo w kwiatach tropikalnych."
           fill
           className="object-cover max-md:hidden"
         />
         <Image
           urlEndpoint="https://ik.imagekit.io/wn3496"
-          src="/B&N_zapowiedz/zimowa_background_mobile.jpg"
-          alt="Banner, ludki świąteczne."
+          src="/B&N_zapowiedz/tlo_karo_jungle.jpg"
+          alt="Banner, Karo w kwiatach tropikalnych.."
           fill
           className="object-cover md:hidden"
         />
@@ -44,10 +44,11 @@ function Banner() {
           BAJKI+NUDESY
         </h2>
         <p
-          className={`text-columbia-blue text-xl my-8 mx-20 text-center ${subtitleFont.className}`}
+          className={`text-lime-100 text-xl my-8 mx-20 text-center ${subtitleFont.className}`}
         >
-          Jednodniowe spotkanie fotograficzne w&nbsp;Bielsku-Białej. Zimowa
-          edycja już 31&nbsp;stycznia!
+          Dołącz do nas podczas trzeciej edycji -&nbsp;dwie daty do wyboru:
+          <br />
+          30&nbsp;maja lub 6&nbsp;czerwca (soboty).
         </p>
         <Link
           href={REGISTRATION_LINK}
@@ -55,7 +56,7 @@ function Banner() {
           rel="noopener noreferrer"
         >
           <Button
-            className={`${subtitleFont.className} text-2xl mt-4 sm:mt-8 rounded-lg bg-fade border-1 px-8 py-4 border-textwhite data-hover:bg-fade-dark data-active:bg-fade-dark cursor-pointer data-hover:border-columbia-blue data-hover:text-columbia-blue`}
+            className={`${subtitleFont.className} text-2xl mt-4 sm:mt-8 rounded-lg bg-fade border-1 px-8 py-4 border-textwhite data-hover:bg-fade-dark data-active:bg-fade-dark cursor-pointer data-hover:border-lime-200 data-hover:text-lime-200`}
           >
             Zapisz się
           </Button>
