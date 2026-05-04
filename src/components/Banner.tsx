@@ -2,12 +2,11 @@
 
 import React from "react";
 import { Image } from "@imagekit/next";
-import Link from "next/link";
 import { Button } from "@headlessui/react";
 import { artFont, subtitleFont } from "../lib/fonts";
 import { IoIosArrowDown } from "react-icons/io";
 
-const REGISTRATION_LINK = "forms.gle/saf9hSgMHkWukVEL8";
+const REGISTRATION_LINK = "https://forms.gle/saf9hSgMHkWukVEL8";
 
 function Banner() {
   return (
@@ -50,17 +49,13 @@ function Banner() {
           <br />
           30&nbsp;maja lub 6&nbsp;czerwca (soboty).
         </p>
-        <Link
-          href={REGISTRATION_LINK}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={REGISTRATION_LINK} target="_blank" rel="noopener noreferrer">
           <Button
             className={`${subtitleFont.className} text-2xl mt-4 sm:mt-8 rounded-lg bg-fade border-1 px-8 py-4 border-textwhite data-hover:bg-fade-dark data-active:bg-fade-dark cursor-pointer data-hover:border-lime-200 data-hover:text-lime-200`}
           >
             Zapisz się
           </Button>
-        </Link>
+        </a>
         <Button
           className="mt-8 md:mt-16 flex flex-col justify-center items-center gap-2 transition-transform duration-500 hover:scale-105 cursor-pointer"
           onClick={scrollToInfo}
